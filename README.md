@@ -15,7 +15,7 @@ See [here](https://github.com/infeco/trecis.boards/tree/main/submissions) for ex
 `yyyymmdd` should correspond to the submission date of your run.
 
 2. In the directory `submissions/`, create the following files:
-   1. `submissions/yyyymmdd-foo/run.json.bz2` - run file on the evaluation tweets (info-type labels and priority scores for tweets in `TRECIS-CTIT-H-*.json.gz`), bz2-compressed
+   1. `submissions/yyyymmdd-foo/run.json.gz` - run file on the evaluation tweets (info-type labels and priority scores for tweets in `TRECIS-CTIT-H-*.json.gz`), gz-compressed
    2. `submissions/yyyymmdd-foo/metadata.json`, in the following format:
 
        ```
@@ -35,7 +35,7 @@ See [here](https://github.com/infeco/trecis.boards/tree/main/submissions) for ex
 
 3. Run our check script to make sure everything is in order (and fix any errors). This script will produce an `*.errorlog` file that describes errors found in the file:
    ```bash
-   $ perl eval/check_incident.pl submissions/yyyymmdd-foo/run.json.bz2
+   $ perl eval/check_incident.pl submissions/yyyymmdd-foo/run.json.gz
    ```
 
 4. After correcting any errors the check script reveals, add the `*.errlog` file to your repository in your `submissions/yyyymmdd-foo` directory.
@@ -43,8 +43,9 @@ See [here](https://github.com/infeco/trecis.boards/tree/main/submissions) for ex
 5. Open a pull request against this repository.
 The subject (title) of the pull request should be "Submission yyyymmdd-foo", where `yyyymmdd-foo` is the submission id you decided on.
 This pull request should contain exactly three files:
-   1. `submissions/yyyymmdd-foo/run.json.bz2` - the compressed run file
-   2. `submissions/yyyymmdd-foo/metadata.json` - the metadata file
+   1. `submissions/yyyymmdd-foo/run.json.gz` - the compressed run file
+   2. `submissions/yyyymmdd-foo/run.json.gz.errlog` - the errlog file from the check script
+   3. `submissions/yyyymmdd-foo/metadata.json` - the metadata file
 
 
 
