@@ -1,0 +1,10 @@
+{
+  "organization": "njit",
+  "model_description": "Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained RoBERTa model to generate text embeddings of tweets and classify them.",
+  "uses_users": 0,
+  "uses_neural": 1,
+  "uses_external": 1,
+  "type": "automatic",
+  "paper": "",
+  "code": ""
+}
