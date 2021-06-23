@@ -33,12 +33,14 @@ See [here](https://github.com/infeco/trecis.boards/tree/main/submissions) for ex
        Leave the value of `paper` and `code` empty (i.e., the empty string) if not available.
        These fields correspond to what is shown on the leaderboard.
 
-3. Run our check script to make sure everything is in order (and fix any errors):
+3. Run our check script to make sure everything is in order (and fix any errors). This script will produce an `*.errorlog` file that describes errors found in the file:
    ```bash
    $ perl eval/check_incident.pl submissions/yyyymmdd-foo/run.json.bz2
    ```
 
-4. Open a pull request against this repository.
+4. After correcting any errors the check script reveals, add the `*.errlog` file to your repository in your `submissions/yyyymmdd-foo` directory.
+
+5. Open a pull request against this repository.
 The subject (title) of the pull request should be "Submission yyyymmdd-foo", where `yyyymmdd-foo` is the submission id you decided on.
 This pull request should contain exactly three files:
    1. `submissions/yyyymmdd-foo/run.json.bz2` - the compressed run file
