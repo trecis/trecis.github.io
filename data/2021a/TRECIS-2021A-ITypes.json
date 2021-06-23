@@ -1,0 +1,405 @@
+{
+	"identifier": "TRECIS-ITR-H-Types-v5-T1",
+	"description": "TREC-IS Incident Tweet Routing (High-Level) Information Types. Version four, Task 1, created for the 2020 edition of the track.",
+	"informationTypes": [
+		{
+			"id": "CallToAction-Donations",
+			"desc": "The user is asking people to donate goods/money",
+			"level": "High-level",
+			"intentType": "CallToAction",
+			"shortType": "Donations",
+			"exampleLowLevelTypes": [ 
+				"DonateMoney",
+				"DonateGoods",
+				"PromoteFundRaising"
+			]
+		},
+		{
+			"id": "CallToAction-MovePeople",
+			"desc": "The user is asking people to leave an area or go to another area",
+			"level": "High-level",
+			"intentType": "CallToAction",
+			"shortType": "MovePeople",
+			"exampleLowLevelTypes": [ 
+				"EvacuateNow",
+				"GatherAt"
+			]
+		},
+		{
+			"id": "CallToAction-Volunteer",
+			"desc": "The user is asking people to volunteer to help the response effort",
+			"level": "High-level",
+			"intentType": "CallToAction",
+			"shortType": "Volunteer",
+			"exampleLowLevelTypes": [ 
+				"RegisterNow"
+			]
+		},
+		{
+			"id": "Other-Advice",
+			"desc": "The  author is providing some advice to the public",
+			"level": "High-level",
+			"intentType": "Other",
+			"shortType": "Advice",
+			"exampleLowLevelTypes": []
+		},
+		{
+			"id": "Other-ContextualInformation",
+			"desc": "The post contains contextual information that can help understand the event, but is not about the event itself.",
+			"level": "High-level",
+			"intentType": "Other",
+			"shortType": "ContextualInformation",
+			"exampleLowLevelTypes": [ 
+				"ExampleOfPreviousEvent",
+				"LegalInformation",
+				"HistoricalContext"
+			]
+		},
+		{
+			"id": "Other-Discussion",
+			"desc": "Users are discussing the event",
+			"level": "High-level",
+			"intentType": "Other",
+			"shortType": "Discussion",
+			"exampleLowLevelTypes": [ 
+				"Causes",
+				"Blame",
+				"Rumors"
+			]
+		},
+		{
+			"id": "Other-Irrelevant",
+			"desc": "The post is un-related to the event or contains no information.",
+			"level": "High-level",
+			"intentType": "Other",
+			"shortType": "Irrelevant",
+			"exampleLowLevelTypes": [ 
+				"Irrelevant"
+			]
+		},
+		{
+			"id": "Other-Sentiment",
+			"desc": "The post is expressing some sentiment about the event",
+			"level": "High-level",
+			"intentType": "Other",
+			"shortType": "Sentiment",
+			"exampleLowLevelTypes": [ 
+				"Sadness",
+				"Hope",
+				"Support",
+				"Wellwishing"
+			]
+		},
+		{
+			"id": "Report-CleanUp",
+			"desc": "A report of the clean up after the event",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "CleanUp",
+			"exampleLowLevelTypes": []
+		},
+		{
+			"id": "Report-EmergingThreats",
+			"desc": "The user is reporting a potential problem that may cause future loss of life or damage",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "EmergingThreats",
+			"exampleLowLevelTypes": [ 
+				"BuildingsAtRisk",
+				"PowerOutage",
+				"UnexplodedBomb",
+				"PeopleNotEvacuating",
+				"FoodShortage",
+				"InfectiousHumanDisease",
+				"FuelShortage",
+				"ContaminatedWaterSupply",
+				"ContaminatedWater",
+				"TheftOfAid",
+				"Looting",
+				"PriceGouging",
+				"IDPConcentration",
+				"WaterShortage",
+				"SecurityConcern"
+			]
+		},
+		{
+			"id": "Report-Factoid",
+			"desc": "The user is relating some facts, typically numerical",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "Factoid",
+			"exampleLowLevelTypes": [ 
+				"LandDevastated",
+				"InjuriesCount",
+				"KilledCount",
+				"NumberDisplacedPeople",
+				"NumberOfAssailants",
+				"ShooterCount",
+				"DamageCost"
+			]
+		},
+		{
+			"id": "Report-FirstPartyObservation",
+			"desc": "The user is giving an eye-witness account",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "FirstPartyObservation",
+			"exampleLowLevelTypes": [ 
+				"Group/IndividualMovement",
+				"PeopleEvacuating",
+				"DamageObserved",
+				"CollapsedStructure", 
+				"ExplosionDamage", 
+				"RoadBlocked", 
+				"CompromisedBridge", 
+				"CommunicationLinesDown"
+			]
+		},
+		{
+			"id": "Report-Hashtags",
+			"desc": "Reporting which hashtags correspond to each event",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "Hashtags",
+			"exampleLowLevelTypes": []
+		},
+		{
+			"id": "Report-Location",
+			"desc": "The post contains information about the user or observation location",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "Location",
+			"exampleLowLevelTypes": [ 
+				"UserLocation",
+				"IncidentLocation"
+			]
+		},
+		{
+			"id": "Report-MultimediaShare",
+			"desc": "The user is sharing images or video",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "MultimediaShare",
+			"exampleLowLevelTypes": [ 
+				"Video",
+				"Images",
+				"Map"
+			]
+		},
+		{
+			"id": "Report-News",
+			"desc": "The post is a news report providing/linking to current/continious coverage of the event",
+			"level": "High-level",
+			"intentType": "Other",
+			"shortType": "News",
+			"exampleLowLevelTypes": [ 
+				"NewsHeadline",
+				"NewsArticle"
+			]
+		},
+		{
+			"id": "Report-NewSubEvent",
+			"desc": "The user is reporting a new occurence that public safety officers need to respond to.",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "NewSubEvent",
+			"exampleLowLevelTypes": [ 
+				"PeopleTrapped",
+				"UnexplodedBombFound",
+				"UnexplodedBomb",
+				"IndiscriminateShooting",
+				"GroupViolence",
+				"HostageTaken",
+				"MedicalEmergency"
+			]
+		},
+		{
+			"id": "Report-Official",
+			"desc": "An official report by a government or public safety representative",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "Official",
+			"exampleLowLevelTypes": [ 
+				"OfficialStatement",
+				"RegionalWarning",
+				"PublicAlert",
+				"PressRelease"
+			]
+		},
+		{
+			"id": "Report-OriginalEvent",
+			"desc": "A report of the original event occuring. This was in effect the 'Other-KnownAlready' category from 2018.",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "OriginalEvent",
+			"exampleLowLevelTypes": []
+		},
+		{
+			"id": "Report-ServiceAvailable",
+			"desc": "The user is reporting that they or someone else is providing a service",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "ServiceAvailable",
+			"exampleLowLevelTypes": [ 
+				"HospitalOperating",
+				"ShelterOffered",
+				"WaterDistributionPoint",
+				"FoodDistributionPoint"
+			]
+		},
+		{
+			"id": "Report-ThirdPartyObservation",
+			"desc": "The user is reporting a information that they recieved from someone else",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "ThirdPartyObservation",
+			"exampleLowLevelTypes": [ 
+				"Group/IndividualMovement",
+				"PeopleEvacuating",
+				"DamageObserved",
+				"CollapsedStructure", 
+				"ExplosionDamage", 
+				"RoadBlocked", 
+				"CompromisedBridge", 
+				"CommunicationLinesDown"
+			]
+		},
+		{
+			"id": "Report-Weather",
+			"desc": "The user is providing a weather report (current or forcast)",
+			"level": "High-level",
+			"intentType": "Report",
+			"shortType": "Weather",
+			"exampleLowLevelTypes": [ 
+				"Current",
+				"Forecast"
+			]
+		},
+		{
+			"id": "Request-GoodsServices",
+			"desc": "The user is asking for a particular service or physical good.",
+			"level": "High-level",
+			"intentType": "Request",
+			"shortType": "GoodsServices",
+			"exampleLowLevelTypes": [ 
+				"PsychiatricNeed", 
+				"Equipment", 
+				"ShelterNeeded", 
+				"Vehicles"
+			]
+		},
+		{
+			"id": "Request-InformationWanted",
+			"desc": "The user is requesting information",
+			"level": "High-level",
+			"intentType": "Request",
+			"shortType": "InformationWanted",
+			"exampleLowLevelTypes": [ 
+				"PersonsNews", 
+				"MissingPersons",
+				"EventStatus"
+			]
+		},
+		{
+			"id": "Request-SearchAndRescue",
+			"desc": "The user is requesting a rescue (for themselves or others)",
+			"level": "High-level",
+			"intentType": "Request",
+			"shortType": "SearchAndRescue",
+			"exampleLowLevelTypes": [ 
+				"SelfRescue", 
+				"OtherRescue"
+			]
+		}
+	],
+	"audienceTypes": [
+		{
+			"id": "Unknown",
+			"desc": "This tweet does not have a clear intended audience"
+		},
+		{
+			"id": "Local",
+			"desc": "This tweet provides information about what is happening at the community level or information for individuals directly impacted by the event"
+		},
+		{
+			"id": "General",
+			"desc": "This tweet provides general information about the event, including statistics, outlook, or other information intended for those not directly impacted by the hazard"
+		}
+	],
+	"imageTypes": [
+		{
+			"id": "Informative",
+			"desc": "This tweet provides general information about the event, including statistics, outlook, or other information intended for those not directly impacted by the hazard"
+		},
+		{
+			"id": "Satellite",
+			"desc": "An image appears taken from a satellite"
+		},
+		{
+			"id": "WeatherForecast",
+			"desc": "A weather forecast, either graphic or satellite projection"
+		},
+		{
+			"id": "Infographic",
+			"desc": "Textual graphic with information or statistics about the event"
+		},
+		{
+			"id": "WeatherPhoto",
+			"desc": "A photograph of some weather phenomenon, e.g., a storm, tornado, wildfire, etc. This category is separate from weather forecasts"
+		},
+		{
+			"id": "Victims",
+			"desc": "Photograph showing victims of or someone who was directly impacted by the crisis"
+		},
+		{
+			"id": "Damage",
+			"desc": "Photograph of damage of infrastructure, homes, vehicles, landscape, or similar"
+		},
+		{
+			"id": "Crowds",
+			"desc": "Photograph shows a group of people"
+		},
+		{
+			"id": "RecoveryEfforts",
+			"desc": "Photograph of recovery efforts, such as a rescue operation, donations, or volunteering efforts"
+		},
+		{
+			"id": "Screenshot",
+			"desc": "Screenshot taken from a phone, computer, or video"
+		}
+	],
+	"authorTypes": [
+		{
+			"id": "Useful",
+			"desc": "Whether knowing the author was informative"
+		},
+		{
+			"id": "NewsOrg",
+			"desc": "account represents media outlets such as local news affiliates, newspapers, or national/global news organizations"
+		},
+		{
+			"id": "GovtOrg",
+			"desc": "account represents a local, regional, or federal governmental agency"
+		},
+		{
+			"id": "PrivateOrg",
+			"desc": "account represents a corporations, NGO, or community organization"
+		},
+		{
+			"id": "PublicOfficial",
+			"desc": "account represents a politician, elected/appointed official, one who hold public office, or spokesperson for a governmental agency"
+		},
+		{
+			"id": "Journalist",
+			"desc": "account represents media personnel"
+		},
+		{
+			"id": "Citizen",
+			"desc": "account appears to belong to an individual who otherwise does not hold some position of authority"
+		},
+		{
+			"id": "Bot",
+			"desc": "account and its content appears to be populated by some sort of automated feed (e.g., Weather warning bots)"
+		}
+	]
+}
