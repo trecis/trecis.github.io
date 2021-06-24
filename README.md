@@ -3,19 +3,24 @@
 This repo holds the official TREC-IS message classification and ranking leaderboard and describes the process for submitting runs.
 All associated data for the task (corpus, training data, ontologies, etc.) are held on [this page](https://trecis.org).
 
+This leaderboard is based on the TREC-IS `2021-A` test topics available [here](http://dcs.gla.ac.uk/~richardm/TREC_IS/2020/data.html). 
+The [2021-A Submission Guidelines](http://dcs.gla.ac.uk/~richardm/TREC_IS/2021/2021A/TREC%202021-A%20Incident%20Streams%20Track.pdf) describe this task in more detail.
+
 **NOTE** The instructions and formatting for this repository and leaderboard borrow heavily from the [MSMARCO-Document-Ranking-Submissions](https://github.com/microsoft/MSMARCO-Document-Ranking-Submissions) repository, which has an excellent set up for evaluations, "coopetition", and leaderboards for ML-based challenges.
 
 ## Submission Instructions
 
 To make a submission, please follow these instructions:
 
-1. Decide on a submission id, which will be a permanent (public) unique key. The submission id should be of the form `yyyymmdd-foo`, where `foo` can be a suffix of your choice, e.g., your organization/group name.
+1. Download the TREC-IS [2021-A test topics](http://dcs.gla.ac.uk/~richardm/TREC_IS/2021/2021A/2021a.topics) and the associated Twitter data by following [these instructions](http://dcs.gla.ac.uk/~richardm/TREC_IS/2020/data.html). For each tweet in this dataset, provide a set of information types and a priority score, and package them according to the [2021-A Submission Guidelines](http://dcs.gla.ac.uk/~richardm/TREC_IS/2021/2021A/TREC%202021-A%20Incident%20Streams%20Track.pdf).
+
+2. Decide on a submission id, which will be a permanent (public) unique key. The submission id should be of the form `yyyymmdd-foo`, where `foo` can be a suffix of your choice, e.g., your organization/group name.
 Please keep the length reasonable.
 See [here](https://github.com/infeco/trecis.boards/tree/main/submissions) for examples.
 `yyyymmdd` should correspond to the submission date of your run.
 
-2. In the directory `submissions/`, create the following files:
-   1. `submissions/yyyymmdd-foo/run.json.gz` - run file on the evaluation tweets (info-type labels and priority scores for tweets in `TRECIS-CTIT-H-*.json.gz`), gz-compressed
+3. In the directory `submissions/`, create the following files:
+   1. `submissions/yyyymmdd-foo/run.json.gz` - run file on the evaluation tweets (info-type labels and priority scores for tweets in `TRECIS-CTIT-H-*.json.gz`), gz-compressed.
    2. `submissions/yyyymmdd-foo/metadata.json`, in the following format:
 
        ```
@@ -33,14 +38,14 @@ See [here](https://github.com/infeco/trecis.boards/tree/main/submissions) for ex
        Leave the value of `paper` and `code` empty (i.e., the empty string) if not available.
        These fields correspond to what is shown on the leaderboard.
 
-3. Run our check script to make sure everything is in order (and fix any errors). This script will produce an `*.errorlog` file that describes errors found in the file:
+4. Run our check script to make sure everything is in order (and fix any errors). This script will produce an `*.errorlog` file that describes errors found in the file:
    ```bash
    $ perl eval/check_incident.pl submissions/yyyymmdd-foo/run.json.gz
    ```
 
-4. After correcting any errors the check script reveals, add the `*.errlog` file to your repository in your `submissions/yyyymmdd-foo` directory.
+5. After correcting any errors the check script reveals, add the `*.errlog` file to your repository in your `submissions/yyyymmdd-foo` directory.
 
-5. Open a pull request against this repository.
+6. Open a pull request against this repository.
 The subject (title) of the pull request should be "Submission yyyymmdd-foo", where `yyyymmdd-foo` is the submission id you decided on.
 This pull request should contain exactly three files:
    1. `submissions/yyyymmdd-foo/run.json.gz` - the compressed run file
