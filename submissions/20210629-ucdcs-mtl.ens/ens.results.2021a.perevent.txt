@@ -1,0 +1,50 @@
+TREC-IS 2021a Notebook Evaluator v2.8
+Run: ens (run.json.gz)
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization (Multi-type)
+Per Event Performance
+--------------------------------------------------
+2020_01_27_houston_explosion.2020
+  Information Type Precision (positive class, multi-type, macro): 0.19686333303662573
+  Information Type Recall (positive class, multi-type, macro): 0.3639363130907898
+  Information Type F1 (positive class, multi-type, macro): 0.19904806655070367
+  Information Type Accuracy (overall, multi-type, macro): 0.7910434782608694
+
+2016_puttingal_temple
+  Information Type Precision (positive class, multi-type, macro): 0.19201987810990517
+  Information Type Recall (positive class, multi-type, macro): 0.36069347389720874
+  Information Type F1 (positive class, multi-type, macro): 0.1932355187722289
+  Information Type Accuracy (overall, multi-type, macro): 0.6350872483221477
+
+2017_12_04_thomas_wildfire.2017
+  Information Type Precision (positive class, multi-type, macro): 0.3501962017376218
+  Information Type Recall (positive class, multi-type, macro): 0.48021817681461526
+  Information Type F1 (positive class, multi-type, macro): 0.38067088360325135
+  Information Type Accuracy (overall, multi-type, macro): 0.8076127320954908
+
+2017_12_07_lilac_wildfire.2017
+  Information Type Precision (positive class, multi-type, macro): 0.3451637017201864
+  Information Type Recall (positive class, multi-type, macro): 0.5099160338299791
+  Information Type F1 (positive class, multi-type, macro): 0.33901935177311093
+  Information Type Accuracy (overall, multi-type, macro): 0.7660162601626017
+
+2018_maryland_flood
+  Information Type Precision (positive class, multi-type, macro): 0.3195991676830367
+  Information Type Recall (positive class, multi-type, macro): 0.6096721613962841
+  Information Type F1 (positive class, multi-type, macro): 0.35555944521228616
+  Information Type Accuracy (overall, multi-type, macro): 0.80408
+
+2019_saugus_high_school_shooting
+  Information Type Precision (positive class, multi-type, macro): 0.20994306978143512
+  Information Type Recall (positive class, multi-type, macro): 0.35176587348407584
+  Information Type F1 (positive class, multi-type, macro): 0.21708375427211768
+  Information Type Accuracy (overall, multi-type, macro): 0.7041282565130258
+
+2020_easter_tornado_outbreak
+  Information Type Precision (positive class, multi-type, macro): 0.23163413699759727
+  Information Type Recall (positive class, multi-type, macro): 0.33448244035159325
+  Information Type F1 (positive class, multi-type, macro): 0.25700565971454503
+  Information Type Accuracy (overall, multi-type, macro): 0.680801603206413
+
+
