@@ -1,0 +1,10 @@
+{
+  "organization": "njit",
+  "model_description": "Label Propagation generation pipeline with priority scores using highest average score of information type labels.",
+  "uses_users": 0,
+  "uses_neural": 1,
+  "uses_external": 1,
+  "type": "automatic",
+  "paper": "",
+  "code": ""
+}
