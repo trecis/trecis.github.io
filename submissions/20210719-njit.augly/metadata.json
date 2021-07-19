@@ -1,0 +1,10 @@
+{
+  "organization": "njit",
+  "model_description": "NJIT RoBERTa run with AugLy in place of synonym augmentation.",
+  "uses_users": 0,
+  "uses_neural": 1,
+  "uses_external": 1,
+  "type": "automatic",
+  "paper": "",
+  "code": ""
+}
