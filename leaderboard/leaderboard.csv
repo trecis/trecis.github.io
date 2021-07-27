@@ -20,3 +20,4 @@ ucdcs-mtl.ens,2021/06/29,ucd-cs,"The ensemble run of multi-task learning with De
 njit_label_prop,2021/07/01,njit,"Model uses GPT2 to generate tweets and label propagation to label them, using which we train a new transformer model.",,,0.4928,0.2409,0.3165,0.8874,0.2203,0.2035,0.2204,0.2640
 njit_semi_sup_cat2prior,2021/07/06,njit,"Semi-supervised generation pipeline with priority scores using highest average score of information type labels.",,,0.4818,0.2409,0.3165,0.8874,0.1968,0.2648,0.0611,0.1492
 njit_label_prop_cat2prior,2021/07/08,njit,"Label Propagation generation pipeline with priority scores using highest average score of information type labels.",,,0.5044,0.2409,0.3165,0.8874,0.2113,0.2692,0.0787,0.1760
+njit_eda,2021/07/23,njit,"NJIT RoBERTa run with Easy Data Augmentation (EDA) in place of synonym augmentation.",,,0.4996,0.2943,0.3255,0.8788,0.2355,0.2061,0.1800,0.2413
