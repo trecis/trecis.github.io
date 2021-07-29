@@ -1,0 +1,1 @@
+njit_roberta,2021/06/23,njit,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained RoBERTa model to generate text embeddings of tweets and classify them.",,,0.5721,0.2616,0.3055,0.8652,0.1599,0.1730,0.1728,0.2099

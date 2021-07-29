@@ -1,0 +1,44 @@
+TREC-IS 2021a Notebook Evaluator v3.0
+Run: ens (run.json.gz)
+
+--------------------------------------------------
+EVALUATON: nDCG and Priority
+Overall performance
+--------------------------------------------------
+> nDCG:	0.5907201586229132
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization
+Overall performance
+--------------------------------------------------
+> Information Type Precision (positive class, multi-type, macro):	0.2977601325913037
+> Information Type Recall (positive class, multi-type, macro):	0.4131165383291036
+> Information Type F1 (positive class, multi-type, macro):	0.321064313336276
+> Information Type Accuracy (overall, multi-type, macro):	0.8645713208969283
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.29352292705291233
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.2826856233362103
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.2578906833467014
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9437535330695308
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.2990981974981642
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.4543052483268594
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.3410138807014049
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.839566411789791
+
+--------------------------------------------------
+EVALUATON: Information Priority Level
+Overall Performance
+--------------------------------------------------
+> Priority Label Prediction (F1, macro): 0.3124616974737521
+
+--------------------------------------------------
+EVALUATON: Information Priority Score
+Correlational Performance
+--------------------------------------------------
+> Priority Correlation (Pearson): 0.35583260557461904
+> Priority Correlation, High (Pearson): 0.32502322358362246
+> Priority Correlation, Low (Pearson): 0.36610239957161794
+
+--------------------------------------------------
+LATEX
+--------------------------------------------------
+ens & 0.5907 & 0.2579 & 0.3211 & 0.8646 & 0.3052 & 0.3125 & 0.3250 & 0.3416 \\

@@ -1,0 +1,1 @@
+njit_semi_sup,2021/06/27,njit,"Model uses GPT2 to generate tweets and semi-supervision to label them, using which we train a new transformer model.",,,0.5729,0.2429,0.3036,0.8888,0.1599,0.1730,0.1728,0.2082

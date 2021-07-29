@@ -1,0 +1,1 @@
+njit_label_prop,2021/07/01,njit,"Model uses GPT2 to generate tweets and label propagation to label them, using which we train a new transformer model.",,,0.5717,0.2072,0.2823,0.8841,0.1599,0.1730,0.1728,0.2099
