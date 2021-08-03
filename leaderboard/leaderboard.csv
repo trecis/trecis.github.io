@@ -9,3 +9,18 @@ njit_label_prop,2021/07/08,njit,Label Propagation generation pipeline with prior
 njit_eda,2021/07/23,njit,NJIT RoBERTa run with Easy Data Augmentation (EDA) in place of synonym augmentation.,,,0.5655,0.2815🏆,0.3052,0.8778,0.1518,0.1730,0.1336,0.2220
 njit_deberta,2021/08/02,njit,NJIT RoBERTa run with DeBERTa instead of RoBERTa.,,,0.5961🏆,0.2074,0.2644,0.7742,0.1748,0.1754,0.2196,0.2944
 njit_random_run,2021/08/02,trecis,Baseline model that assigns all tweets the most common information type (advice) and priority label (low).,,,0.3074,0.0000,0.0064,0.8654,0.0204,0.1016,0.0000,0.0020
+anon.sub.08,2021/06/01,anon,"INFO-roBERTa-base+2xTransformer+MultitaskEvent_type, 280, hashtags",,,0.5690,0.2155,0.2724,0.8896🏆,0.1849,0.2175,0.1862,0.2716
+anon.sub.07,2021/06/01,anon,"PRIORITY-LR5 INFO-roBERTa-base+2xTransformer+event_type+event_title, 256, hashtags, combined",,,0.3590,0.1948,0.2682,0.8892,0.2250,0.2478,0.1168,0.1141
+anon.sub.06,2021/06/01,anon,"PRIORITY-SVM-mixed INFO-roBERTa-base+2xTransformer+event_type+event_title, 280, combined",,,0.2885,0.1715,0.2804,0.8873,0.0400,0.0967,-0.0177,0.0017
+anon.sub.05,2021/06/01,anon,"INFO-roBERTa-base+2xTransformer, 280 PRIORITY-roBERTa-base+2xTransformer+event_type+event_title, 280, hashtags, combined",,,0.6050,0.2060,0.2901,0.8884,0.2113,0.2573,0.3068,0.3143
+anon.sub.04,2021/06/01,anon,We used ktrain package to train our system,,,0.5695,0.2010,0.3080,0.8555,0.1029,0.1672,-0.0667,0.0840
+njit_bert,2021/06/01,anon,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained BERT model to generate text embeddings of tweets and classify them.",,,0.5435,0.1720,0.2446,0.8153,0.1447,0.1608,0.1053,0.2171
+random_run,2021/06/01,anon,,,,0.3107,0.0679,0.1398,0.4999,0.2264,0.2277,0.1651,0.0613
+njit_roberta,2021/06/01,anon,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained RoBERTa model to generate text embeddings of tweets and classify them",,,0.5698,0.2616,0.3055,0.8652,0.1599,0.1730,0.1728,0.2099
+ucdcs-run1,2021/06/01,anon,Multi task training using deberta-base without eda augmentation.,,,0.6115🏆,0.2150,0.2951,0.8837,0.3032,0.3068,0.2592,0.2970
+ucdcs-run2,2021/06/01,anon,Multi task training using deberta-base with eda augmentation.,,,0.5848,0.2215,0.2984,0.8835,0.2500,0.2781,0.2305,0.2748
+ucdcs-run3,2021/06/01,anon,multi-task learning using deberta-large without eda augmentation,,,0.6051,0.2391,0.3100,0.8852,0.2720,0.3066,0.3112,0.3325
+ucdcs-run4,2021/06/01,anon,"multi-task learning ensembles of run1, 2, and 3",,,0.5912,0.0119,0.0608,0.7755,0.3052,0.3125,0.3250,0.3416
+anon.sub.03,2021/06/01,anon,"25 binary classifier + regression head on BERT base, using weighting schemes for balancing, each task using optimal tuned parameters from pool.",,,0.3965,0.0983,0.2062,0.8813,0.0301,0.0810,0.0879,0.0654
+anon.sub.02,2021/06/01,anon,"25 binary classifier + regression head on BERT base, using weighting schemes for balancing, each task using optimal tuned parameters from pool. Actionable tasks utilise transfer learning techniques based on label co-occurrence to alleviate data scarcity.",,,0.3967,0.1657,0.2924,0.8827,0.0301,0.0810,0.0879,0.0654
+anon.sub.01,2021/06/01,anon,"25 binary classifier + regression head on BERT base, using weighting schemes for balancing, each task using optimal tuned parameters from pool. All tasks utilise transfer learning techniques based on label co-occurrence to alleviate data scarcity.",,,0.3953,0.1657,0.2889,0.8842,0.0301,0.0810,0.0879,0.0654
