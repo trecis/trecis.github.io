@@ -1,0 +1,1 @@
+STrans-GaussianNB,2021/10/10,ucd-cs,The run of using sentence transformers as the fixed features and use GaussianNB as the downstream classifier,,,0.4297,0.2423,0.2695,0.8294,0.1998,0.1988,0.1470,0.1514

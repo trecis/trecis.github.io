@@ -1,0 +1,44 @@
+TREC-IS 2021a Notebook Evaluator v3.0
+Run: STrans-GaussianNB (run.json.gz)
+
+--------------------------------------------------
+EVALUATON: nDCG and Priority
+Overall performance
+--------------------------------------------------
+> nDCG:	0.4296769171105097
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization
+Overall performance
+--------------------------------------------------
+> Information Type Precision (positive class, multi-type, macro):	0.23058092715547954
+> Information Type Recall (positive class, multi-type, macro):	0.4548158735651338
+> Information Type F1 (positive class, multi-type, macro):	0.26948124800144563
+> Information Type Accuracy (overall, multi-type, macro):	0.8294139815338234
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.18227305140893188
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.471785052752135
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.24233674527347446
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.8995352050750581
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.24583604581228408
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.4494571854008177
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.27805319623133135
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.8072704372576439
+
+--------------------------------------------------
+EVALUATON: Information Priority Level
+Overall Performance
+--------------------------------------------------
+> Priority Label Prediction (F1, macro): 0.19883068027881898
+
+--------------------------------------------------
+EVALUATON: Information Priority Score
+Correlational Performance
+--------------------------------------------------
+> Priority Correlation (Pearson): 0.15769026972217498
+> Priority Correlation, High (Pearson): 0.1470405323324855
+> Priority Correlation, Low (Pearson): 0.16124018218540478
+
+--------------------------------------------------
+LATEX
+--------------------------------------------------
+STrans-GaussianNB & 0.4297 & 0.2423 & 0.2695 & 0.8294 & 0.1998 & 0.1988 & 0.1470 & 0.1514 \\
