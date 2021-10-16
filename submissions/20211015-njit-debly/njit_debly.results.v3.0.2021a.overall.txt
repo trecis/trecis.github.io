@@ -1,0 +1,44 @@
+TREC-IS 2021a Notebook Evaluator v3.0
+Run: njit_debly (njit_debly.run.json.gz)
+
+--------------------------------------------------
+EVALUATON: nDCG and Priority
+Overall performance
+--------------------------------------------------
+> nDCG:	0.5260910043229804
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization
+Overall performance
+--------------------------------------------------
+> Information Type Precision (positive class, multi-type, macro):	0.31207841437791495
+> Information Type Recall (positive class, multi-type, macro):	0.26994751398990524
+> Information Type F1 (positive class, multi-type, macro):	0.2681021724776614
+> Information Type Accuracy (overall, multi-type, macro):	0.8834294328245713
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.26172276970514546
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.16549601276723422
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.18345037857851101
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9523114125997111
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.32798019690615793
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.30293219858653814
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.2948343179194983
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.8616772286850537
+
+--------------------------------------------------
+EVALUATON: Information Priority Level
+Overall Performance
+--------------------------------------------------
+> Priority Label Prediction (F1, macro): 0.210166639513347
+
+--------------------------------------------------
+EVALUATON: Information Priority Score
+Correlational Performance
+--------------------------------------------------
+> Priority Correlation (Pearson): 0.17048745258923037
+> Priority Correlation, High (Pearson): 0.09941171692018623
+> Priority Correlation, Low (Pearson): 0.19417936447891176
+
+--------------------------------------------------
+LATEX
+--------------------------------------------------
+njit_debly & 0.5261 & 0.1835 & 0.2681 & 0.8834 & 0.2408 & 0.2102 & 0.0994 & 0.1637 \\
