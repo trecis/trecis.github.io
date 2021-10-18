@@ -1,0 +1,10 @@
+{
+  "organization": "UCD-CS",
+  "model_description": "UCD ensemble run with extra steps",
+  "uses_users": 0,
+  "uses_neural": 1,
+  "uses_external": 1,
+  "type": "automatic",
+  "paper": "",
+  "code": ""
+}
