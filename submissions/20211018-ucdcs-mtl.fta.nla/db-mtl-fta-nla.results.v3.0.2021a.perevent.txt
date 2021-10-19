@@ -1,0 +1,44 @@
+TREC-IS 2021a Notebook Evaluator v3.0
+Run: db-mtl-fta-nla (run.json.gz)
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization (Multi-type)
+Per Event Performance
+--------------------------------------------------
+2020_02_10_mideast_tornadoes.day2_al.2020
+  Information Type Precision (positive class, multi-type, macro): 0.2275793330819222
+  Information Type Recall (positive class, multi-type, macro): 0.35172646929195345
+  Information Type F1 (positive class, multi-type, macro): 0.24516209679465095
+  Information Type Accuracy (overall, multi-type, macro): 0.8645653533458412
+
+2020_05_06_tn_derecho.2020
+  Information Type Precision (positive class, multi-type, macro): 0.26192533658174044
+  Information Type Recall (positive class, multi-type, macro): 0.31453406160282926
+  Information Type F1 (positive class, multi-type, macro): 0.2301503989595313
+  Information Type Accuracy (overall, multi-type, macro): 0.8915778019586508
+
+2019_10_25_kincade_wildfire.2019
+  Information Type Precision (positive class, multi-type, macro): 0.30128495484843354
+  Information Type Recall (positive class, multi-type, macro): 0.3427012186397611
+  Information Type F1 (positive class, multi-type, macro): 0.2923499181883351
+  Information Type Accuracy (overall, multi-type, macro): 0.89286
+
+2019_durham_gas_explosion
+  Information Type Precision (positive class, multi-type, macro): 0.2348298455624825
+  Information Type Recall (positive class, multi-type, macro): 0.30948266611475433
+  Information Type F1 (positive class, multi-type, macro): 0.24217683615738508
+  Information Type Accuracy (overall, multi-type, macro): 0.7335200000000001
+
+2020_tornado_outbreak_of_april
+  Information Type Precision (positive class, multi-type, macro): 0.2984938509442513
+  Information Type Recall (positive class, multi-type, macro): 0.34342568181043154
+  Information Type F1 (positive class, multi-type, macro): 0.26910429845198897
+  Information Type Accuracy (overall, multi-type, macro): 0.8748696558915536
+
+2020_visakhapatnam_gas_leak
+  Information Type Precision (positive class, multi-type, macro): 0.31578829797229857
+  Information Type Recall (positive class, multi-type, macro): 0.17031707328700718
+  Information Type F1 (positive class, multi-type, macro): 0.16646509064177623
+  Information Type Accuracy (overall, multi-type, macro): 0.7566344513928367
+
+

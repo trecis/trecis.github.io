@@ -29,3 +29,6 @@ l3i_ttxth_combined,2021/09/28,l3i,"INFO-roBERTa-base+2xTransformer+event_type+ev
 STrans-GaussianNB,2021/10/10,ucd-cs,The run of using sentence transformers as the fixed features and use GaussianNB as the downstream classifier,,,0.4297,0.2423,0.2695,0.8294,0.1998,0.1988,0.1470,0.1514
 deberta-mtl-fta,2021/10/14,ucd-cs,The run of deberta-base multi-task learning with few-shot augmentations,,,0.5890,0.1986,0.2793,0.8902🏆,0.2769,0.2807,0.2471,0.3001
 njit_debly,2021/10/15,njit,UCD ensemble run with different pipelines for information class classification and priority scoring and  augmentation with AugLy.,,,0.5261,0.1835,0.2681,0.8834,0.2408,0.2102,0.0994,0.1637
+ens-fta,2021/10/18,ucd-cs,UCD ensemble run with extra steps plus few-shot augmentation and noise label annealing,,,0.5755,0.1592,0.2597,0.8034,0.3060🏆,0.3141,0.2786,0.2855
+ens,2021/10/18,ucd-cs,UCD ensemble run with extra steps,,,0.5951,0.2627,0.3205,0.8686,0.3050,0.3211🏆,0.2892,0.3089
+db-mtl-fta-nla,2021/10/18,ucd-cs,The run of deberta-base multi-task learning with few-shot augmentations plus noise label annealing,,,0.5290,0.2007,0.2751,0.8815,0.2620,0.2810,0.1721,0.2193
