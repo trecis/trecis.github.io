@@ -22,3 +22,4 @@ njit_semi_sup_cat2prior,2021/07/06,njit,"Semi-supervised generation pipeline wit
 njit_label_prop_cat2prior,2021/07/08,njit,"Label Propagation generation pipeline with priority scores using highest average score of information type labels.",,,0.5044,0.2409,0.3165,0.8874,0.2113,0.2692,0.0787,0.1760
 njit_eda,2021/07/23,njit,"NJIT RoBERTa run with Easy Data Augmentation (EDA) in place of synonym augmentation.",,,0.4996,0.2943,0.3255,0.8788,0.2355,0.2061,0.1800,0.2413
 njit_augly,2021/07/19,njit,"NJIT RoBERTa run with AugLy in place of synonym augmentation.",,,0.4977,0.3271,0.3335,0.8722,0.2068,0.1943,0.1675,0.2179
+ucr_use_1,2022/03/08,ucr-cse,Universal Sentence Encoder based model with optimized thresholding,,,0.4643,0.2081,0.1862,0.8895,0.1134,0.1734,0.0318,0.1203

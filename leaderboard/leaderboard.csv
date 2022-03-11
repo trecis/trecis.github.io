@@ -1,34 +1,35 @@
 Run,date,team,description,paper,code,nDCG@100,Info-Type F1 [Actionable],Info-Type F1 [All],Info-Type Accuracy,Priority F1 [Actionable],Priority F1 [All],Priority R [Actionable],Priority R [All] 
-njit_augly,2021/07/19,njit,NJIT RoBERTa run with AugLy in place of synonym augmentation.,,,0.5407,0.2477,0.2977,0.8690,0.1662,0.1792,0.1421,0.2014
-njit_label_prop,2021/07/01,njit,"Model uses GPT2 to generate tweets and label propagation to label them, using which we train a new transformer model.",,,0.5717,0.2072,0.2823,0.8841,0.1599,0.1730,0.1728,0.2099
-ens,2021/06/29,ucd-cs,"The ensemble run of multi-task learning with Deberta and eda augmentation, i.e., ucdcs-run4 at 2021a (alignment issue fixed)",https://lill.is/site/pubs/Wang2021b.html,https://github.com/wangcongcong123/crisis-mtl,0.5907🏆,0.2579,0.3211🏆,0.8646,0.3052🏆,0.3125🏆,0.3250🏆,0.3416🏆
-njit_semi_sup,2021/06/27,njit,"Model uses GPT2 to generate tweets and semi-supervision to label them, using which we train a new transformer model.",,,0.5729,0.2429,0.3036,0.8888🏆,0.1599,0.1730,0.1728,0.2082
-njit_semi_sup,2021/07/06,njit,Semi-supervised generation pipeline with priority scores using highest average score of information type labels.,,,0.5584,0.2072,0.2823,0.8841,0.2785,0.2809,0.0937,0.1353
-njit_roberta,2021/06/23,njit,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained RoBERTa model to generate text embeddings of tweets and classify them.",,,0.5721,0.2616🏆,0.3055,0.8652,0.1599,0.1730,0.1728,0.2099
-njit_label_prop,2021/07/08,njit,Label Propagation generation pipeline with priority scores using highest average score of information type labels.,,,0.5504,0.2072,0.2823,0.8841,0.2557,0.2719,0.1401,0.1373
-njit_eda,2021/07/23,njit,NJIT RoBERTa run with Easy Data Augmentation (EDA) in place of synonym augmentation.,,,0.5655,0.2815🏆,0.3052,0.8778,0.1518,0.1730,0.1336,0.2220
-njit_deberta,2021/08/02,njit,NJIT RoBERTa run with DeBERTa instead of RoBERTa.,,,0.5961🏆,0.2074,0.2644,0.7742,0.1748,0.1754,0.2196,0.2944
-njit_random_run,2021/08/02,trecis,Baseline model that assigns all tweets the most common information type (advice) and priority label (low).,,,0.3074,0.0000,0.0064,0.8654,0.0204,0.1016,0.0000,0.0020
-anon.sub.08,2021/06/01,anon,"INFO-roBERTa-base+2xTransformer+MultitaskEvent_type, 280, hashtags",,,0.5690,0.2155,0.2724,0.8896🏆,0.1849,0.2175,0.1862,0.2716
-anon.sub.07,2021/06/01,anon,"PRIORITY-LR5 INFO-roBERTa-base+2xTransformer+event_type+event_title, 256, hashtags, combined",,,0.3590,0.1948,0.2682,0.8892,0.2250,0.2478,0.1168,0.1141
-anon.sub.06,2021/06/01,anon,"PRIORITY-SVM-mixed INFO-roBERTa-base+2xTransformer+event_type+event_title, 280, combined",,,0.2885,0.1715,0.2804,0.8873,0.0400,0.0967,-0.0177,0.0017
-anon.sub.05,2021/06/01,anon,"INFO-roBERTa-base+2xTransformer, 280 PRIORITY-roBERTa-base+2xTransformer+event_type+event_title, 280, hashtags, combined",,,0.6050,0.2060,0.2901,0.8884,0.2113,0.2573,0.3068,0.3143
-anon.sub.04,2021/06/01,anon,We used ktrain package to train our system,,,0.5695,0.2010,0.3080,0.8555,0.1029,0.1672,-0.0667,0.0840
-njit_bert,2021/06/01,anon,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained BERT model to generate text embeddings of tweets and classify them.",,,0.5435,0.1720,0.2446,0.8153,0.1447,0.1608,0.1053,0.2171
-random_run,2021/06/01,anon,,,,0.3107,0.0679,0.1398,0.4999,0.2264,0.2277,0.1651,0.0613
-njit_roberta,2021/06/01,anon,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained RoBERTa model to generate text embeddings of tweets and classify them",,,0.5698,0.2616,0.3055,0.8652,0.1599,0.1730,0.1728,0.2099
-ucdcs-run1,2021/06/01,anon,Multi task training using deberta-base without eda augmentation.,,,0.6115🏆,0.2150,0.2951,0.8837,0.3032,0.3068,0.2592,0.2970
-ucdcs-run2,2021/06/01,anon,Multi task training using deberta-base with eda augmentation.,,,0.5848,0.2215,0.2984,0.8835,0.2500,0.2781,0.2305,0.2748
-ucdcs-run3,2021/06/01,anon,multi-task learning using deberta-large without eda augmentation,,,0.6051,0.2391,0.3100,0.8852,0.2720,0.3066,0.3112,0.3325
-ucdcs-run4,2021/06/01,anon,"multi-task learning ensembles of run1, 2, and 3",,,0.5912,0.0119,0.0608,0.7755,0.3052,0.3125,0.3250,0.3416
-anon.sub.03,2021/06/01,anon,"25 binary classifier + regression head on BERT base, using weighting schemes for balancing, each task using optimal tuned parameters from pool.",,,0.3965,0.0983,0.2062,0.8813,0.0301,0.0810,0.0879,0.0654
-anon.sub.02,2021/06/01,anon,"25 binary classifier + regression head on BERT base, using weighting schemes for balancing, each task using optimal tuned parameters from pool. Actionable tasks utilise transfer learning techniques based on label co-occurrence to alleviate data scarcity.",,,0.3967,0.1657,0.2924,0.8827,0.0301,0.0810,0.0879,0.0654
-anon.sub.01,2021/06/01,anon,"25 binary classifier + regression head on BERT base, using weighting schemes for balancing, each task using optimal tuned parameters from pool. All tasks utilise transfer learning techniques based on label co-occurrence to alleviate data scarcity.",,,0.3953,0.1657,0.2889,0.8842,0.0301,0.0810,0.0879,0.0654
-l3i_ttxth,2021/09/28,l3i,"INFO-PRIORITY-roBERTa-base+2xTransformer+event_type+event_title, 256, hashtags",,,0.5955,0.1948,0.2682,0.8892,0.2160,0.2429,0.4349🏆,0.3585🏆
-l3i_ttxth_combined,2021/09/28,l3i,"INFO-roBERTa-base+2xTransformer+event_type+event_title, 256, hashtags, PRIORITY-roBERTa-base+2xTransformer+event_type+event_title, 280",,,0.5963,0.1715,0.2804,0.8873,0.2160,0.2429,0.4349🏆,0.3585🏆
-STrans-GaussianNB,2021/10/10,ucd-cs,The run of using sentence transformers as the fixed features and use GaussianNB as the downstream classifier,,,0.4297,0.2423,0.2695,0.8294,0.1998,0.1988,0.1470,0.1514
-deberta-mtl-fta,2021/10/14,ucd-cs,The run of deberta-base multi-task learning with few-shot augmentations,,,0.5890,0.1986,0.2793,0.8902🏆,0.2769,0.2807,0.2471,0.3001
-njit_debly,2021/10/15,njit,UCD ensemble run with different pipelines for information class classification and priority scoring and  augmentation with AugLy.,,,0.5261,0.1835,0.2681,0.8834,0.2408,0.2102,0.0994,0.1637
-ens-fta,2021/10/18,ucd-cs,UCD ensemble run with extra steps plus few-shot augmentation and noise label annealing,,,0.5755,0.1592,0.2597,0.8034,0.3060🏆,0.3141,0.2786,0.2855
-ens,2021/10/18,ucd-cs,UCD ensemble run with extra steps,,,0.5951,0.2627,0.3205,0.8686,0.3050,0.3211🏆,0.2892,0.3089
-db-mtl-fta-nla,2021/10/18,ucd-cs,The run of deberta-base multi-task learning with few-shot augmentations plus noise label annealing,,,0.5290,0.2007,0.2751,0.8815,0.2620,0.2810,0.1721,0.2193
+deberta-mtl-fta,2021/10/14,ucd-cs,The run of deberta-base multi-task learning with few-shot augmentations,,,0.4630,0.2159,0.2647,0.9016🏆,0.2497,0.2361,0.2779,0.2834
+njit_augly,2021/07/19,njit,NJIT RoBERTa run with AugLy in place of synonym augmentation.,,,0.4242,0.2441,0.2729,0.8811,0.1723,0.1565,0.1700,0.2172
+STrans-GaussianNB,2021/10/10,ucd-cs,The run of using sentence transformers as the fixed features and use GaussianNB as the downstream classifier,,,0.3368,0.2083,0.2575,0.8474,0.1959,0.1712,0.1096,0.1417
+njit_label_prop,2021/07/01,njit,"Model uses GPT2 to generate tweets and label propagation to label them, using which we train a new transformer model.",,,0.4381,0.2008,0.2600,0.8964,0.1719,0.1557,0.2087,0.2431
+ens,2021/06/29,ucd-cs,"The ensemble run of multi-task learning with Deberta and eda augmentation, i.e., ucd-cs-run4 at 2021a (alignment issue fixed)",,https://github.com/wangcongcong123/crisis-mtl,0.4617,0.2670,0.2923,0.8685,0.2817,0.2623,0.2886,0.3182🏆
+njit_debly,2021/10/15,njit,UCD ensemble run with different pipelines for information class classification and priority scoring and  augmentation with AugLy.,,,0.4070,0.2046,0.2502,0.8994,0.2323,0.1777,0.1608,0.2007
+njit_semi_sup,2021/06/27,njit,"Model uses GPT2 to generate tweets and semi-supervision to label them, using which we train a new transformer model.",,,0.4385,0.2275,0.2780,0.9003,0.1719,0.1557,0.2087,0.2431
+db-mtl-fta-nla,2021/10/18,ucd-cs,The run of deberta-base multi-task learning with few-shot augmentations plus noise label annealing,,,0.4193,0.1936,0.2488,0.8907,0.2727,0.2609,0.2650,0.2339
+ens,2021/10/18,ucd-cs,UCD ensemble run with extra steps,,,0.4643,0.2784🏆,0.2946🏆,0.8728,0.2864🏆,0.2734🏆,0.2748,0.2827
+njit_semi_sup,2021/07/06,njit,Semi-supervised generation pipeline with priority scores using highest average score of information type labels.,,,0.4219,0.2008,0.2600,0.8964,0.2271,0.2323,0.0849,0.1346
+ens-fta,2021/10/18,ucd-cs,UCD ensemble run with extra steps plus few-shot augmentation and noise label annealing,,,0.4515,0.1131,0.2170,0.8073,0.2852,0.2724,0.2479,0.2665
+njit_roberta,2021/06/23,njit,"Model that uses a simple text augmentation strategy for expanding training data. Then, we use a pre-trained RoBERTa model to generate text embeddings of tweets and classify them.",,,0.4394,0.2501,0.2753,0.8746,0.1719,0.1557,0.2087,0.2431
+njit_deberta,2021/08/02,njit,NJIT RoBERTa run with DeBERTa instead of RoBERTa.,,,0.4541,0.1710,0.2312,0.7820,0.1610,0.1466,0.2587,0.3072
+l3i_ttxth,2021/09/28,l3i,"INFO-PRIORITY-roBERTa-base+2xTransformer+event_type+event_title, 256, hashtags",,,0.4877,0.1645,0.2368,0.9003,0.2086,0.2293,0.3072🏆,0.3053
+njit_label_prop,2021/07/08,njit,Label Propagation generation pipeline with priority scores using highest average score of information type labels.,,,0.4215,0.2008,0.2600,0.8964,0.2268,0.2288,0.1058,0.1225
+l3i_ttxth_combined,2021/09/28,l3i,"INFO-roBERTa-base+2xTransformer+event_type+event_title, 256, hashtags, PRIORITY-roBERTa-base+2xTransformer+event_type+event_title, 280",,,0.4888,0.1928,0.2675,0.9004,0.2086,0.2293,0.3072,0.3053
+njit_eda,2021/07/23,njit,NJIT RoBERTa run with Easy Data Augmentation (EDA) in place of synonym augmentation.,,,0.4292,0.2531,0.2735,0.8892,0.1647,0.1531,0.1553,0.2258
+njit_roberta,2021/06/01,njit,,,,0.4385,0.2501,0.2753,0.8746,0.1719,0.1557,0.2087,0.2431
+njit_random_run,2021/06/01,njit,,,,0.2485,0.0000,0.0044,0.8853,0.0444,0.1043,-0.0041,0.0024
+RB_2T_TTH_256_LR5,2021/06/01,rb,,,,0.2892,0.1645,0.2368,0.9003,0.2364,0.2294,0.1487,0.1034
+RB_2T_TT_280_SVM,2021/06/01,rb,,,,0.2333,0.1928,0.2675,0.9004,0.0695,0.1151,0.0009,-0.0085
+RB_2T_MT_H_280,2021/06/01,rb,,,,0.4549,0.2271,0.2498,0.8999,0.2059,0.2177,0.2258,0.2515
+ucd-cs-run1,2021/06/01,ucd-cs,,,,0.4727,0.2433,0.2772,0.8926,0.2657,0.2632,0.2590,0.2888
+uogTr-04-coocc,2021/06/01,uofgtr,,,,0.3095,0.1556,0.2587,0.8937,0.0588,0.1035,0.1131,0.0908
+njit_bert,2021/06/01,njit,,,,0.4102,0.1662,0.2111,0.8223,0.1480,0.1366,0.1057,0.2126
+uogTr-01-pw,2021/06/01,uofgtr,,,,0.3094,0.0869,0.1798,0.8887,0.0588,0.1035,0.1131,0.0908
+uogTr-02-pwcoocc,2021/06/01,uofgtr,,,,0.3098,0.1556,0.2606,0.8936,0.0588,0.1035,0.1131,0.0908
+RB_2Tx2_TTH_280,2021/06/01,rb,,,,0.4904🏆,0.2289,0.2686,0.8949,0.2247,0.2352,0.3020,0.2773
+njit_random_run,2021/06/01,njit,,,,0.2521,0.0452,0.1132,0.5002,0.2252,0.2044,0.0151,0.0122
+ucd-cs-run2,2021/06/01,ucd-cs,,,,0.4569,0.2326,0.2753,0.8911,0.2536,0.2524,0.1995,0.2686
+ucd-cs-run3,2021/06/01,ucd-cs,,,,0.4707,0.2538,0.2860,0.8930,0.2530,0.2694,0.2741,0.3053
+ucd-cs-run4,2021/06/01,ucd-cs,,,,0.4620,0.0181,0.0532,0.7944,0.2817,0.2623,0.2886,0.3182
+sienaRun,2021/06/01,siena,,,,0.4061,0.1788,0.2691,0.8607,0.1328,0.1722,0.0796,0.1128
+ucr_use_1,2022/03/08,ucr-cse,Universal Sentence Encoder based model with optimized thresholding,,,0.4941,0.1942,0.1767,0.8887,0.1010,0.1565,0.0891,0.1177
