@@ -33,3 +33,4 @@ ucd-cs-run3,2021/06/01,ucd-cs,,,,0.4707,0.2538,0.2860,0.8930,0.2530,0.2694,0.274
 ucd-cs-run4,2021/06/01,ucd-cs,,,,0.4620,0.0181,0.0532,0.7944,0.2817,0.2623,0.2886,0.3182
 sienaRun,2021/06/01,siena,,,,0.4061,0.1788,0.2691,0.8607,0.1328,0.1722,0.0796,0.1128
 ucr_use_1,2022/03/08,ucr-cse,Universal Sentence Encoder based model with optimized thresholding,,,0.4941🏆,0.1942,0.1767,0.8887,0.1010,0.1565,0.0891,0.1177
+2021a-bert-base-uncased-single,2022/03/25,shu-1014,Ensemble Pretrained Language Models with Selective Attention,,,0.5597🏆,0.0915,0.1707,0.9031🏆,0.2165,0.2244,0.4414🏆,0.3856🏆

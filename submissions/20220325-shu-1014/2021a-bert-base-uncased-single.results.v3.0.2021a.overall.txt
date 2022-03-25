@@ -1,0 +1,44 @@
+TREC-IS 2021a Notebook Evaluator v3.0
+Run: 2021a-bert-base-uncased-single (run.json.gz)
+
+--------------------------------------------------
+EVALUATON: nDCG and Priority
+Overall performance
+--------------------------------------------------
+> nDCG:	0.559713290601679
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization
+Overall performance
+--------------------------------------------------
+> Information Type Precision (positive class, multi-type, macro):	0.26231960608849286
+> Information Type Recall (positive class, multi-type, macro):	0.15472830093134868
+> Information Type F1 (positive class, multi-type, macro):	0.1707153277023528
+> Information Type Accuracy (overall, multi-type, macro):	0.9031430186546069
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.21777367773677736
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.06643583081042853
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.09149744685904287
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9641511211607311
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.27638674135745567
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.18261013360111292
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.1957315006002401
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.8838773020737256
+
+--------------------------------------------------
+EVALUATON: Information Priority Level
+Overall Performance
+--------------------------------------------------
+> Priority Label Prediction (F1, macro): 0.22443393776663892
+
+--------------------------------------------------
+EVALUATON: Information Priority Score
+Correlational Performance
+--------------------------------------------------
+> Priority Correlation (Pearson): 0.40162333303874576
+> Priority Correlation, High (Pearson): 0.4414414602272921
+> Priority Correlation, Low (Pearson): 0.38835062397589704
+
+--------------------------------------------------
+LATEX
+--------------------------------------------------
+2021a-bert-base-uncased-single & 0.5597 & 0.0915 & 0.1707 & 0.9031 & 0.2165 & 0.2244 & 0.4414 & 0.3856 \\
